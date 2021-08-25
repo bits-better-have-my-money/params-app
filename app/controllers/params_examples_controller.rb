@@ -11,8 +11,16 @@ class ParamsExamplesController < ApplicationController
   end
 
   def guess_game
-    input_guess = params[:guess]
-    render json: {message: "You guessed #{input_guess}"}
+    winning_number = 36
+    input_guess = params[:guess].to_i
+    if input_guess < winning_number
+      message = "Too low!"
+    elsif input_guess > winning_number
+      message = "Too high!"      
+    else
+      message = "You win!"
+    end
+    render json: {message: message}
   end
 
 end
