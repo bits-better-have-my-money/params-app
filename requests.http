@@ -1,0 +1,6 @@
+POST http://localhost:3000/body_params
+content-type: application/json
+
+{
+  "secret_info": "giraffe"
+}

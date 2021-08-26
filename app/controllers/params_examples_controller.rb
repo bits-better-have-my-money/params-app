@@ -28,4 +28,9 @@ class ParamsExamplesController < ApplicationController
     render json: {message: "The key name is wildcard and the value is #{user_input}"}
   end
 
+  def body_params
+    user_input = params[:secret_info]
+    render json: {message: "The secret info is #{user_input}"}
+  end
+
 end
