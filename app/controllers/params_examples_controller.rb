@@ -28,4 +28,5 @@ class ParamsExamplesController < ApplicationController
     render json: {message: "The key name is wildcard and the value is #{user_input}"}
   end
 
+
 end
