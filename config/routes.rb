@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get "/guess_game/:guess", controller: "params_examples", action: "guess_game"
   # body params
   post "/body_params", controller: "params_examples", action: "body_params"
+  post "/guess_game", controller: "params_examples", action: "guess_game"
+
+  post "/credentials" => "params_examples#credentials"
 end
 
 # web request

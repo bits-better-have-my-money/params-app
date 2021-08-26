@@ -1,6 +1,16 @@
-POST http://localhost:3000/body_params
+POST http://localhost:3000/guess_game
 content-type: application/json
 
 {
-  "secret_info": "giraffe"
+  "guess": 40
+}
+
+###
+
+POST http://localhost:3000/credentials
+content-type: application/json
+
+{
+  "username": "hugh",
+  "password": "swordfish"
 }
